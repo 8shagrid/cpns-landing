@@ -68,12 +68,16 @@ export function Navbar() {
                     </div>
 
                     {/* Mobile Menu Button */}
-                    <button
-                        className="md:hidden p-2 text-foreground"
-                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                    >
-                        {isMobileMenuOpen ? <X /> : <Menu />}
-                    </button>
+                    {/* Mobile Actions */}
+                    <div className="flex items-center gap-2 md:hidden">
+                        <ModeToggle />
+                        <button
+                            className="p-2 text-foreground"
+                            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                        >
+                            {isMobileMenuOpen ? <X /> : <Menu />}
+                        </button>
+                    </div>
                 </nav>
             </Container>
 
@@ -99,9 +103,7 @@ export function Navbar() {
                             ))}
                             <div className="flex flex-col gap-3 mt-4">
 
-                                <div className="flex justify-center">
-                                    <ModeToggle />
-                                </div>
+
                                 <Button
                                     className="w-full justify-center"
                                     onClick={() => {
