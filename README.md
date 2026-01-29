@@ -2,7 +2,7 @@
 
 A premium, high-conversion landing page designed for **CPNS Master** — an integrated CPNS preparation platform combining offline tutoring with a modern mobile app.
 
-![CPNS Master Preview](/public/hand-phone-mockup-silver.png)
+![CPNS Master Preview](public/ui.png)
 
 ## ✨ Overview
 
